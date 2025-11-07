@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Battle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1 class="title">🌟 Quiz Battle 🌟</h1>
+
+    <!-- Start Screen -->
+    <div id="start-screen" class="screen active fade-in">
+      <h2>Enter Your Name</h2>
+      <input type="text" id="player-name" placeholder="Your name..." />
+      <button id="start-btn" class="btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="screen hidden fade-in">
+      <h2 id="welcome-text"></h2>
+      <div id="question-container"></div>
+      <div id="answer-buttons" class="btn-grid"></div>
+      <div class="controls">
+        <button id="next-btn" class="btn next-btn hidden">Next</button>
+      </div>
+      <div class="info">
+        <p id="timer">⏱ Time: 15s</p>
+        <p id="score">🏆 Score: 0</p>
+      </div>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="screen hidden fade-in">
+      <h2 id="final-message"></h2>
+      <button id="restart-btn" class="btn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
